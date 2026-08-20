@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+</head>
+<body>
+{% block conteudo %}
+{% endblock conteudo %}
+<br>
+<br>
+<a> Menu :</a>
+<br>
+<a href="{{url_for('index')}}"> Início </a>
+<br>
+<a href="{{url_for('pessoa')}}"> Pessoa </a>
+<br>
+<a href="{{url_for('listar_atividades')}}"> Listar </a>
+<br>
+<a href="{{url_for('criar_atividade')}}"> Criar </a>
+
+</body>
+</html>
