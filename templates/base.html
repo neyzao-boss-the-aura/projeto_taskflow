@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Base</title>
+    <link rel="stylesheet" href="base.css">
 </head>
 <body>
-{% block conteudo %}
-{% endblock conteudo %}
-<br>
-<br>
-<a> Menu :</a>
-<br>
-<a href="{{url_for('index')}}"> Início </a>
-<br>
-<a href="{{url_for('pessoa')}}"> Pessoa </a>
-<br>
-<a href="{{url_for('listar_atividades')}}"> Listar </a>
-<br>
-<a href="{{url_for('criar_atividade')}}"> Criar </a>
 
+<div class="pai">
+    <div class="filho">
+<a href="{{url_for('index')}}"> Início </a>
+        </div>
+<br>
+    <div class="filho">
+<a href="{{url_for('pessoa')}}"> Pessoa </a>
+        </div>
+<br>
+    <div class="filho">
+<a href="{{url_for('listar_atividades')}}"> Listar </a>
+        </div>
+<br>
+    <div class="filho">
+<a href="{{url_for('criar_atividade')}}"> Criar </a>
+        </div>
+</div>
+{% block conteudo %}
+{% endblock %}
 </body>
 </html>
