@@ -1,6 +1,21 @@
 {% extends 'base.html' %}
 {% block conteudo %}
-
-Página Listar
-
+<form action="{{url_for('listar_atividades')}}" method="post">
+<h1> Listar : </h1>
+    <br>
+Aqui você irá listar suas atividades prontas
+    <br>
+    Lista :
+    <label>
+    <br>
+        <textarea name="form_lista" rows="5" cols="20"></textarea>
+</label>
+<br>
+<br>
+<button submit> Salvar</button>
+<button reset> Redefinir</button>
+</form>
+{{dados_atividade_listar}}<br>
+{% for atividade in dados_atividade_listar %}
+{% endfor %}
 {% endblock conteudo %}

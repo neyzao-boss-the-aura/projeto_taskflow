@@ -1,6 +1,30 @@
 {% extends 'base.html' %}
 {% block conteudo %}
-
-Página Pessoa
-
+<form action="{{url_for('pessoa')}}" method="post">
+<h1> Cadastrar pessoa/perfil </h1>
+    <br>
+<label>
+    Seu nome completo :
+<input name="form_nome" type="text">
+</label>
+    <br>
+    <br>
+    <label>
+    E-mail :
+<input name="form_nome" type="text">
+</label>
+    <br>
+    <br>
+    <label>
+    Telefone :
+<input name="form_nome" type="tel">
+</label>
+    <br>
+<br>
+<button submit> Salvar</button>
+<button reset> Redefinir</button>
+</form>
+    {{dados_atividade_pessoa}}<br>
+{% for atividade in dados_atividade_pessoa %}
+{% endfor %}
 {% endblock conteudo %}

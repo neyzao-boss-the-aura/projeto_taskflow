@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Base</title>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="../static/base.css">
 </head>
 <body>
-
 <div class="pai">
     <div class="filho">
-<a href="{{url_for('index')}}"> Início </a>
-        </div>
-<br>
-    <div class="filho">
-<a href="{{url_for('pessoa')}}"> Pessoa </a>
-        </div>
-<br>
-    <div class="filho">
-<a href="{{url_for('listar_atividades')}}"> Listar </a>
-        </div>
-<br>
-    <div class="filho">
-<a href="{{url_for('criar_atividade')}}"> Criar </a>
-        </div>
+        <a href="{{url_for('index')}}"> Início </a>
+    </div>
+    <div class="filho2">
+        <a href="{{url_for('pessoa')}}"> Pessoa </a>
+    </div>
+    <div class="filho3">
+        <a href="{{url_for('listar_atividades')}}"> Listar </a>
+    </div>
+    <div class="filho4">
+        <a href="{{url_for('criar_atividade')}}"> Criar </a>
+    </div>
 </div>
 {% block conteudo %}
+
 {% endblock %}
 </body>
 </html>
