@@ -8,7 +8,63 @@ body {
     background-image: url("https://i.pinimg.com/originals/a6/fc/db/a6fcdbfb3b57d8941a1a88702cdd470a.jpg");
     background-size: cover;
 
-    }
+}
+
+.filhote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.filhinho {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: darkkhaki;
+}
+
+a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: darkkhaki;
+}
+
+.pessoa1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: darkkhaki;
+}
+
+.cadastrar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: darkkhaki;
+}
+
+.titulo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h1 {
+    color: white;
+}
 
 .pai {
     width: 100%;
@@ -44,7 +100,7 @@ body {
     margin: 0px 20px;
 }
 
-.filho3 {
+.filho4 {
     display: flex;
     width: 150px;
     background: darkkhaki;
@@ -53,9 +109,10 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0px 20px;
+
 }
 
-.filho4 {
+.filho5 {
     display: flex;
     width: 150px;
     background: darkkhaki;

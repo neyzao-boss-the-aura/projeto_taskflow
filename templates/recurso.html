@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<form action="{{url_for('recurso')}}" method="post">
+<label>
+    Nome :
+<input name="form_nome" type="text">
+</label>
+    <label>
+        Uso prático :
+    <input name="form_uso" type="text">
+    </label>
+    <button submit> Salvar</button>
+    <button reset> Redefinir</button>
+{% endblock conteudo %}
+</form>

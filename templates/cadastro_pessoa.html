@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<form action="{{url_for('cadastro_pessoa')}}" method="post">
+    Listar pessoas
+<h1> Cadastrar pessoa/perfil </h1>
+    <br>
+<label>
+    Seu nome completo :
+<input name="form_nome" type="text">
+</label>
+    <br>
+    <br>
+    <label>
+    E-mail :
+<input name="form_email" type="text">
+</label>
+    <br>
+    <br>
+    <br>
+    Senha :
+<input name="form_senha" type="text">
+</label>
+    <br>
+<br>
+<button submit> Salvar</button>
+<button reset> Redefinir</button>
+</form>
+{% endblock conteudo %}

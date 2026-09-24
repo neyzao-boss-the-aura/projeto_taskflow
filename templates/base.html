@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Base</title>
-    <link rel="stylesheet" href="../static/base.css">
+    <link rel="stylesheet" href="/static/base.css">
 </head>
 <body>
+<h1></h1>
 <div class="pai">
     <div class="filho">
         <a href="{{url_for('index')}}"> Início </a>
     </div>
     <div class="filho2">
-        <a href="{{url_for('pessoa')}}"> Pessoa </a>
-    </div>
-    <div class="filho3">
-        <a href="{{url_for('listar_atividades')}}"> Listar </a>
+        <a href="{{url_for('pessoa')}}"> Lista - Pessoa </a>
     </div>
     <div class="filho4">
-        <a href="{{url_for('criar_atividade')}}"> Criar </a>
+        <a href="{{url_for('atividade')}}"> Lista - Atividade </a>
+        </div>
+    <div class="filho5">
+        <a href="{{url_for('recurso')}}"> Recurso Atividade </a>
     </div>
 </div>
+
+{%for mensagem in get_flashed_messages() %}
+    {{mensagem}}
+{% endfor %}
 {% block conteudo %}
 
 {% endblock %}
